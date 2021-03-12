@@ -7,7 +7,7 @@ Already 2 active users! Join us now!
 ## Features
 One-to-one chat room\
 User search\
-Message encryption\
+Message encryption with an unique key to each pair of users\
 Bell and vibrator notification for new messages received\
 Landscape mode and responsivity\
 Use of recycler views for optimisation\
