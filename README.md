@@ -17,7 +17,7 @@ Homemade logo
 Made with love ~~(and tears)~~ with Android Studio and Firebase ~~(and also with the help of Stack Overflow)~~.
 Target version: API level 30.
 Min compatibility: API level 26.
-![Database architecture diagram](https://github.com/Nakoshima/blah/database_architecture.jpg?raw=true)
+![Database architecture diagram](https://github.com/Nakoshima/blah/blob/main/database_architecture.jpg?raw=true)
 ![App architecture diagram](https://github.com/Nakoshima/blah/app_architecture.jpg?raw=true)
 
 ## Installation
