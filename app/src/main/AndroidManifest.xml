@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iut.appmob.blah">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Blah">
+
+        <activity android:name=".activities.MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.HomepageActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:noHistory="true">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.MAIN_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".activities.ChatActivity"
+            android:parentActivityName=".activities.HomepageActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:noHistory="false">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.HOMEPAGE_ACTIVITY"
+                android:value=".HomepageActivity" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

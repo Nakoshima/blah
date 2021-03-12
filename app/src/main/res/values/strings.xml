@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Blah</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="log_in">Log In</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="type_message">Type message</string>
+    <string name="back">&lt; BACK</string>
+    <string name="send_button">Send button</string>
+    <string name="search">Search a friend</string>
+    <string name="log_out">Log Out</string>
+    <string name="logo">Logo</string>
+    <string name="default_text_view">TextView</string>
+    <string name="contact_profile_picture">Contact profile picture</string>
+    <string name="search_button">Search button</string>
+    <string name="show_password_button">Show password button</string>
+</resources>

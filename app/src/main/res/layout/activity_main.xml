@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F6FC"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context="iut.appmob.blah.activities.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="60dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/logo_blah"
+                android:contentDescription="@string/logo"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/logo_blah"
+                tools:srcCompat="@drawable/logo_blah" />
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="@string/email"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPswd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="35dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/password"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btnShowPswd"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/white"
+                    android:contentDescription="@string/show_password_button"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/eye" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:backgroundTint="#9B60EF"
+                android:elevation="0dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/log_in"
+                android:textAllCaps="false"
+                android:textColor="@color/background"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnSignup"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="35dp"
+                android:backgroundTint="#F7F6FC"
+                android:elevation="0dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="#9E61F4"
+                android:textSize="18sp"
+                app:strokeColor="#9E61F4"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
